@@ -154,6 +154,12 @@ SIDO MEET 最近最火的 5 篇文章
 
 ---
 
+## 🙏 致谢
+
+本仓库的 README 结构、徽章排版、目录组织参考自 [**Khazix-Skills**](https://github.com/KKKKhazix/Khazix-Skills) —— 一个收录作者日常自用 AI skill 的开源仓库。如果你也对如何把 skill 写好、组织好、表达好感兴趣，强烈推荐去看一下。
+
+---
+
 <div align="center">
 
 [MIT License](./LICENSE) · 自由使用 / 修改 / 再分发

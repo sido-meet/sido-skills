@@ -1,0 +1,14 @@
+# Build / packaging artifacts
+*.skill
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/

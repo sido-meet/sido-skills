@@ -1,0 +1,82 @@
+[
+  {
+    "query": "帮我写一篇 NeurIPS 2026 的 abstract，主题是基于 diffusion 的 text-to-3D 生成，我们的方法叫 XYZ-Net",
+    "should_trigger": true
+  },
+  {
+    "query": "我在投 CVPR，麻烦 review 一下我的 introduction 写得有没有问题",
+    "should_trigger": true
+  },
+  {
+    "query": "给我一段 paper 的 introduction，我刚写完初稿，你帮我按顶会的标准改一下",
+    "should_trigger": true
+  },
+  {
+    "query": "这个 ECCV highlight paper 的 method 部分我看不太懂，能帮我解读一下吗",
+    "should_trigger": true
+  },
+  {
+    "query": "我写了一篇 paper 要投 ICLR，related work 部分要怎么组织比较好",
+    "should_trigger": true
+  },
+  {
+    "query": "we present a novel framework 这样的开头太普通了，能不能给我点更好的 abstract 开头句式",
+    "should_trigger": true
+  },
+  {
+    "query": "AI 顶会 paper 的 method section 一般怎么写？有什么固定的段落结构",
+    "should_trigger": true
+  },
+  {
+    "query": "我做的方向是 text-to-video，麻烦按 best paper 的标准帮我写一段 abstract",
+    "should_trigger": true
+  },
+  {
+    "query": "投稿 NeurIPS 的 rebuttal 怎么写？reviewer 问了我们 dataset 太小的问题",
+    "should_trigger": true
+  },
+  {
+    "query": "实验结果那块应该怎么呈现？我有 5 个 baseline 的 FID 数字",
+    "should_trigger": true
+  },
+  {
+    "query": "帮我写一个 Python 函数，实现 quick sort",
+    "should_trigger": false
+  },
+  {
+    "query": "这个 React 组件怎么实现响应式布局",
+    "should_trigger": false
+  },
+  {
+    "query": "给我推荐几本机器学习入门的教材",
+    "should_trigger": false
+  },
+  {
+    "query": "帮我润色一下这份产品需求文档，让它更专业",
+    "should_trigger": false
+  },
+  {
+    "query": "写一篇关于气候变化的博客文章，500 字左右",
+    "should_trigger": false
+  },
+  {
+    "query": "翻译这段英文：The quick brown fox jumps over the lazy dog",
+    "should_trigger": false
+  },
+  {
+    "query": "我的 laptop 风扇一直转，散热有问题，怎么解决",
+    "should_trigger": false
+  },
+  {
+    "query": "SQL 里 LEFT JOIN 和 INNER JOIN 的区别是什么",
+    "should_trigger": false
+  },
+  {
+    "query": "我想做个 app，类似 notion 但功能更聚焦，帮我设计一下",
+    "should_trigger": false
+  },
+  {
+    "query": "解释一下 transformer 里的 self-attention 机制",
+    "should_trigger": false
+  }
+]

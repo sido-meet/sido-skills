@@ -1,0 +1,30 @@
+{
+  "skill_name": "paper-write-skill",
+  "iteration": 1,
+  "evaluations": [
+    {
+      "eval_name": "consistency-review",
+      "with_skill": {
+        "passed": 10,
+        "total": 10,
+        "pass_rate": 1.0,
+        "duration_seconds": 77.0
+      },
+      "without_skill": {
+        "passed": 7,
+        "total": 10,
+        "pass_rate": 0.7,
+        "duration_seconds": 62.4
+      },
+      "delta_pass_rate": 0.3,
+      "delta_duration_seconds": 14.6
+    }
+  ],
+  "summary": {
+    "with_skill_pass_rate": 1.0,
+    "without_skill_pass_rate": 0.7,
+    "with_skill_avg_duration_seconds": 77.0,
+    "without_skill_avg_duration_seconds": 62.4,
+    "verdict": "with_skill wins on coverage (+3 assertions: explicit 4-component framework, camera-ready checklist, methodology references) at a modest +14.6s latency cost."
+  }
+}

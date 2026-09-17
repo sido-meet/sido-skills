@@ -1,0 +1,4 @@
+interface:
+  display_name: "Access SIDO MEET"
+  short_description: "Search and cite SIDO MEET public content"
+  default_prompt: "Use $access-sido-meet to search SIDO MEET and answer with cited site content."

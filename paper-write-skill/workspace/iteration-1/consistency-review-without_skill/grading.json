@@ -1,0 +1,58 @@
+{
+  "eval_id": 1,
+  "eval_name": "consistency-review",
+  "skill_used": false,
+  "duration_seconds": 62.4,
+  "expectations": [
+    {
+      "text": "Output identifies the training data contradiction between Abstract (ProcTHOR-10K) and Method §3.5 (ProcTHOR + ScanNet)",
+      "passed": true,
+      "evidence": "Output §3.4 'Training dataset — ProcTHOR-10K vs. ProcTHOR + ScanNet' explicitly compares both claims and notes the Abstract's '10K' figure appears nowhere else."
+    },
+    {
+      "text": "Output identifies the evaluation benchmark contradiction (Abstract says ScanNet, Introduction says Structured3D)",
+      "passed": true,
+      "evidence": "Output §3.1 'Benchmark — three different names' identifies the mismatch and also flags §3.5's use of ScanNet as training data — potential leakage risk."
+    },
+    {
+      "text": "Output identifies the FID improvement percentage contradiction (Abstract 12.4% vs Introduction 17.8%)",
+      "passed": true,
+      "evidence": "Output §3.2 flags the 12.4% vs 17.8% gap and notes both sections use different comparison partners ('strongest baseline' vs 'prior work')."
+    },
+    {
+      "text": "Output identifies the speedup factor contradiction (Abstract 3× vs Introduction 4.2×)",
+      "passed": true,
+      "evidence": "Output §3.3 'Speedup — 3× vs. 4.2×' flags both the number mismatch and the comparison class drift."
+    },
+    {
+      "text": "Output identifies the phantom 'layout-aware scene tokenizer' module promised in Introduction but absent in Method",
+      "passed": true,
+      "evidence": "Output §3.6 'Module naming' identifies the phantom tokenizer and gives two options (add the module or remove from contributions list)."
+    },
+    {
+      "text": "Output includes a structured 4-component check for each section",
+      "passed": false,
+      "evidence": "Output §2 has structure check for Abstract, Introduction, Method — but uses ad-hoc categories (e.g., '(a) problem framing, (b) approach, (c) training data, (d) benchmark'), not the 4-component (background/gap/method/experiment) framework. No explicit 4-component table."
+    },
+    {
+      "text": "Output provides concrete drop-in rewrite suggestions",
+      "passed": true,
+      "evidence": "Output §5 has six concrete rewrites (Abstract, Intro bullet 3, §3.3 sentence-connection, §3.4 conditioning, §3.5 grammar+loss, section numbering) — each as a drop-in block."
+    },
+    {
+      "text": "Output includes a verifiable-fix checklist for camera-ready",
+      "passed": false,
+      "evidence": "Output does NOT have an explicit checklist. Instead it has §6 'Reviewer-Facing Risk Summary' which lists 5 likely reviewer comments but isn't a checkbox-style camera-ready checklist."
+    },
+    {
+      "text": "Output references the paper-write-skill methodology (找-看-抄-改-修 / 4-component) explicitly",
+      "passed": false,
+      "evidence": "Output has no reference to 找-看-抄-改-修 or 4-component. Uses generic CVPR review vocabulary ('structure check', 'cross-section consistency', 'flow')."
+    },
+    {
+      "text": "Output flags Method-level missing pieces (loss function, key insight sentence, section numbering gap)",
+      "passed": true,
+      "evidence": "Output §3.5 (Method) §4.5 (§3.5 grammar) flags missing loss function. §2.3 notes §3.5 is mis-categorized as Method. Output §2.2 explicitly calls out the §1 → §3 numbering jump. Section roadmap missing also flagged in §2.2."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "eval_id": 1,
+  "eval_name": "consistency-review",
+  "skill_used": true,
+  "duration_seconds": 77.0,
+  "expectations": [
+    {
+      "text": "Output identifies the training data contradiction between Abstract (ProcTHOR-10K) and Method §3.5 (ProcTHOR + ScanNet)",
+      "passed": true,
+      "evidence": "Output §2.1 has a table with all three dataset claims and recommends Option A (single dataset) vs Option B (multi-dataset). Identifies ScanNet appears as both eval (Abstract) and training (§3.5) — a potential data leakage risk."
+    },
+    {
+      "text": "Output identifies the evaluation benchmark contradiction (Abstract says ScanNet, Introduction says Structured3D)",
+      "passed": true,
+      "evidence": "Output §2.2 has dedicated subsection 'Evaluation Benchmark: ScanNet vs Structured3D' with table comparing both and concrete rewrite to unify on Structured3D."
+    },
+    {
+      "text": "Output identifies the FID improvement percentage contradiction (Abstract 12.4% vs Introduction 17.8%)",
+      "passed": true,
+      "evidence": "Output §2.3 'FID Improvement: 12.4% vs 17.8%' — flags the 5.4-point gap, notes the 'scene-level' qualifier in Intro that doesn't exist in Abstract, and offers concrete unification language."
+    },
+    {
+      "text": "Output identifies the speedup factor contradiction (Abstract 3× vs Introduction 4.2×)",
+      "passed": true,
+      "evidence": "Output §2.4 'Speedup Factor: 3× vs 4.2×' — flags both factor mismatch AND the comparison-target drift ('diffusion-only' vs 'prior work'). Proposes a unified sentence."
+    },
+    {
+      "text": "Output identifies the phantom 'layout-aware scene tokenizer' module promised in Introduction but absent in Method",
+      "passed": true,
+      "evidence": "Output §2.5 'Phantom Module' subsection — gives three options (drop bullet / add module / rename), explains why a 'tokenizer' ≠ 'transformer' in 3D generation context."
+    },
+    {
+      "text": "Output includes a structured 4-component check for each section",
+      "passed": true,
+      "evidence": "Output §1 has 'Per-Section 4-Component Check' with tables for Abstract, Introduction, Method each enumerating background/gap/method/experiment (and Method-specific problem-formulation/core-insight/framework/modules/loss). Method explicitly flags missing 'key insight sentence' and missing 'loss function'."
+    },
+    {
+      "text": "Output provides concrete drop-in rewrite suggestions",
+      "passed": true,
+      "evidence": "Output §5 has three concrete rewrites (Abstract, Introduction bullets + roadmap sentence, Method §3.5) marked with parenthetical notes explaining what each rewrite reconciles. Section §2 also offers A/B/C options per fix."
+    },
+    {
+      "text": "Output includes a verifiable-fix checklist for camera-ready",
+      "passed": true,
+      "evidence": "Output §6 has a 12-item checklist covering dataset/benchmark/numbers/speedup target/module naming/section numbering/roadmap/loss/key-insight — directly actionable."
+    },
+    {
+      "text": "Output references the paper-write-skill methodology (找-看-抄-改-修 / 4-component) explicitly",
+      "passed": true,
+      "evidence": "Header line says 'Methodology: 找-看-抄-改-修 → here we execute 看 + 改'. Introduction component table cites 'section-templates.md'. The 4-component framework is used as the diagnostic skeleton."
+    },
+    {
+      "text": "Output flags Method-level missing pieces (loss function, key insight sentence, section numbering gap)",
+      "passed": true,
+      "evidence": "Output §1.3 explicitly marks 'Core insight' as ✗ missing, 'Training objective + loss' as ✗ missing, and notes the §1 → §3 numbering jump with recommendation to add Related Work."
+    }
+  ]
+}

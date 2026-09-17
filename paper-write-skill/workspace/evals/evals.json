@@ -1,0 +1,15 @@
+{
+  "skill_name": "paper-write-skill",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "consistency-review",
+      "prompt": "帮我 review 一下这份 draft 的 consistency。我准备投 CVPR 2026，麻烦按 paper-write-skill 的 4-component 检查 abstract、intro、method 三者之间是否对得上。Draft 在 evals/inputs/consistency-review-draft.md。",
+      "expected_output": "A diagnostic report identifying cross-section inconsistencies in structure, grammar, sentence connections, and especially consistency between abstract / intro / method. Should include concrete rewrite suggestions.",
+      "files": [
+        "evals/inputs/consistency-review-draft.md"
+      ],
+      "assertions": []
+    }
+  ]
+}

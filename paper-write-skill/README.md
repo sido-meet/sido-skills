@@ -22,10 +22,15 @@ The skill works for **any** paper section — abstract, introduction, related wo
 paper-write-skill/
 ├── README.md                            # this file
 ├── SKILL.md                             # main file: 5-step methodology + trigger list + two modes
+├── ROADMAP.md                           # future iterations (v2.0 Traceability, v2.0 Trigger, v3.0 Self-Review)
 └── references/
     ├── sample-abstracts.md              # 5 sample abstracts (4 standards + 1 rewrite demo)
     └── section-templates.md             # 4-component breakdown for each paper section
 ```
+
+## Roadmap
+
+未来的 3 个迭代方向（v2.0 段落级血缘追踪 + v2.0 触发鲁棒性、v3.0 AI 主动自审）写在 [`ROADMAP.md`](./ROADMAP.md)——每个方向背后都有 `workspace/iteration-N/` 的真实痛点支撑，不是凭空规划。
 
 ## Installation
 

@@ -1,7 +1,5 @@
 <div align="center">
 
-**中文** · [English](./README.en.md)
-
 # 🧰 SIDO Skills
 
 #### 我每天在用、自己跑通过的一些 AI Skill，都开源在这里
